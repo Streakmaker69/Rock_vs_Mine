@@ -1,0 +1,23 @@
+Case Summary :
+                A submarine is traversing underwater on the water-border of two countries at war.
+                Mines are planted underwater behind enemy lines and we know that rocks are also present underwater as well.
+
+Objective :
+            We need a system to predict whether an object encountered by the Submarine's Sonar is a Rock or a Mine.
+            So that it can traverse behind enemy lines safely.
+
+Work Flow:
+            1) Collect Sonar Data :
+                                    from lab experiments on "metal cylinders" for mines 
+                                    and various rocks were tested for 
+                                    various features and 
+                                    the data was collected in a csv format given in project files.
+            2) Processing Data : Anlyzing the Data
+            3) Training Data & Test Data Splitting : Here splitting is done in the ration 0.9(Train) : 0.1(Test)
+            4)Supervised Model Application : Logistic Regression Model is used to carry out the following 
+                                             because it is efficient and accurate for 
+                                             binary classified data and prediction.
+            5) Trained Logistic Regression Model : All training data is again fed to the model to determine accuracy of the model
+                                                   Test data is then fed to the training model and again accuracy is checked
+            6) New Data : New Test Case / Random Test CAse instance is fed from the data to check whether the prediction is corret or not
+                          Process is repeated a few times so that the model gets aquainted with new test data and improves accuracy further.
